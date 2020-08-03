@@ -37,12 +37,6 @@
     <script src="{{asset('js')}}/school.js"></script>
     <script src="{{asset('js')}}/Chart.min.js"></script>
     <script src="{{asset('js')}}/jquery-ui.min.js"></script>
-    <!-- sparkline js -->
-    <script src="{{asset('css')}}/vendor/charts/sparkline/jquery.sparkline.js"></script>
-    <!-- chart c3 js -->
-    <script src="{{asset('css')}}/vendor/charts/c3charts/c3.min.js"></script>
-    <script src="{{asset('css')}}/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
-    <script src="{{asset('css')}}/vendor/charts/c3charts/C3chartjs.js"></script>
     @yield('js')
     <title>@yield('title')</title>
 </head>
