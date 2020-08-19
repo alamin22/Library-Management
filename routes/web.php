@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Route::get('/admin/login', 'Admin\AdminLoginController@loginAdmin')->name('adminlogin.loginAdmin');
 Route::post('/admin/login', 'Admin\AdminLoginController@loginAdminVerify')->name('adminlogin.loginAdminVerify');
 Route::group(['middleware'=>['adminSession']],function(){
@@ -69,7 +66,7 @@ Route::post('/school/library/book/publishers/delete','Library\BookPublishersCont
 	Route::get('/school/library/bookLibraryDelete','Library\BooksManagmentController@bookLibraryDelete')->name('library.bookLibraryDelete');
 
 //************************** Self *************************
-	Route::get('/school/library/book/self','Library\LibrarySelfController@index')->name('library.LibrarySelf');
+    Route::get('/school/library/book/self','Library\LibrarySelfController@index')->name('library.LibrarySelf');
     Route::get('/school/library/book/self/get','Library\LibrarySelfController@get_all')->name('library.LibrarySelfShow');
     Route::post('/school/library/book/self/add','Library\LibrarySelfController@store')->name('library.LibrarySelfadd');
     Route::post('/school/library/book/self/edit','Library\LibrarySelfController@update')->name('library.LibrarySelfedit');
