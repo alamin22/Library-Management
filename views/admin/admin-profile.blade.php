@@ -6,7 +6,7 @@
     <!-- ============================================================== -->
     <!-- end pageheader  -->
     <!-- ============================================================== -->
-    <div class="edumaster-widget">
+    <div class="library-widget">
         @if(session('message1'))
             <div class="alert">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
